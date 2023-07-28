@@ -1,0 +1,768 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+body {
+   line-height: 1;
+   background-color: #4b4646;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+}
+
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 15px;
+   max-width: 1000px;
+}
+
+/* ************************** */
+.main {
+   width: 100%;
+   height: 100vh;
+}
+
+.main__car {}
+
+.car {}
+
+.car__container {}
+
+.car__top {
+   background-color: #e1f87d;
+   width: 100%;
+   height: 200px;
+   position: relative;
+}
+
+.top-car__sun {
+   position: absolute;
+   z-index: 2;
+   top: 20px;
+   right: 66px;
+   width: 50px;
+   height: 50px;
+   background-color: #e1c92d;
+   box-shadow: 0 0 100px 100px #d3bc2a;
+   border-radius: 50%;
+}
+
+.sun-top {}
+
+.sun-top__item {}
+
+.top-car__clouds {
+   position: absolute;
+   width: 100%;
+   height: 50px;
+   top: 48px;
+   left: 0;
+}
+
+.clouds-top__box {
+   position: relative;
+   height: 100%;
+}
+
+.box-clouds__left {
+   position: absolute;
+   left: 20px;
+   width: 30%;
+   height: 100%;
+}
+
+.box-clouds__big {
+   position: absolute;
+   width: 80%;
+   height: 100%;
+   background-color: #f4e9e9a3;
+   border-radius: 65% 35% 30% 70% / 36% 80% 20% 64%;
+   box-shadow: 0 0 20px 0 #fff;
+}
+
+.box-clouds__small {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 80%;
+   height: 100%;
+   background-color: #f4e9e9a3;
+   border-radius: 65% 35% 30% 70% / 36% 80% 20% 64%;
+   box-shadow: 0 0 20px 0 #fff;
+}
+
+.box-clouds__normal {
+   position: absolute;
+   top: 0;
+   left: 619px;
+   width: 300px;
+   height: 100px;
+   background-color: #f4e9e9a3;
+   border-radius: 21% 79% 51% 49% / 56% 41% 59% 44%;
+   box-shadow: 0 0 20px 0 #fff;
+}
+
+.box-clouds__right {
+   position: absolute;
+}
+/* ******************************** */
+.car__body {
+   position: relative;
+   z-index: 2;
+}
+
+.body-car__inner {
+   max-width: 600px;
+   width: 100%;
+   min-height: 500px;
+   position: absolute;
+   top: -100px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+/* **************************** */
+.body-car__glass {
+   position: absolute;
+   top: 79px;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 100px;
+   width: 43%;
+}
+
+.body-car__glass::before,
+.body-car__glass::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   width: 0;
+   height: 0;
+   border-bottom: 100px solid #ffa500;
+}
+
+.body-car__glass::before {
+   left: 0;
+   border-left: 50px solid transparent;
+   border-right: 100px solid transparent;
+}
+
+.body-car__glass::after {
+   right: 0;
+   border-right: 50px solid transparent;
+   border-left: 100px solid transparent;
+}
+
+.glass__item {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 100px;
+   width: 62%;
+   background-color: #ffa500;
+}
+
+.glass__left,
+.glass__right {
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-bottom: 100px solid #fff;
+   top: 13px;
+}
+
+.glass__right {
+   left: 14px;
+   transform: rotate(5deg);
+   border-left: 40px solid transparent;
+   border-right: 100px solid transparent;
+}
+
+.glass__left {
+   z-index: 2;
+   right: 14px;
+   border-right: 40px solid transparent;
+   border-left: 100px solid transparent;
+   transform: rotate(353deg);
+}
+
+.glass__center {
+   position: absolute;
+   z-index: 2;
+   top: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 54%;
+   height: 100%;
+   background-color: #fff;
+}
+
+.left-glass__box,
+.right-glass__box {
+   position: absolute;
+   z-index: 10;
+   top: 74px;
+   width: 30px;
+   height: 20px;
+   background-color: #ffa500;
+   border-radius: 25px;
+}
+
+.right-glass__box {
+   left: -82px;
+}
+
+.left-glass__box {
+   right: -82px;
+}
+
+.left-glass__item,
+.right-glass__item {
+   position: absolute;
+   top: 12px;
+   width: 9px;
+   height: 9px;
+   background-color: #000;
+}
+
+.right-glass__item {
+   left: 22px;
+}
+
+.left-glass__item {
+   right: 24px;
+}
+
+/* **************************** */
+.body-car__bonnet {
+   position: absolute;
+   top: 36%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 60%;
+   height: 50px;
+}
+
+.bonnet__block {
+   position: absolute;
+   z-index: 5;
+   height: 100%;
+   width: 100%;
+}
+
+.block-bonnet__left,
+.block-bonnet__right {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+}
+
+.block-bonnet__left {
+   left: 100px;
+}
+
+.block-bonnet__right {
+   right: 139px;
+   text-align: right;
+}
+
+.block-bonnet__left span,
+.block-bonnet__right span {
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 40px solid rgba(255, 255, 255, .1);
+}
+
+.block-bonnet__left span {
+   border-left: 40px solid transparent;
+}
+
+.block-bonnet__right span {
+   border-right: 40px solid transparent;
+}
+
+.block-bonnet__center {
+   position: absolute;
+   left: 120px;
+   width: 50%;
+   height: 100%;
+}
+
+.block-bonnet__center span {
+   display: inline-block;
+   position: absolute;
+   left: 20px;
+   width: 45%;
+   height: 40px;
+   background-color: rgba(255, 255, 255, .1);
+}
+
+
+.bonnet__box {
+   position: relative;
+   height: 100%;
+}
+
+.bonnet__left,
+.bonnet__right {
+   position: absolute;
+   top: 0;
+   height: 100%;
+   width: 50%;
+}
+
+.bonnet__left {
+   left: 0;
+}
+
+.bonnet__right {
+   right: 0;
+   text-align: right;
+}
+
+.bonnet__left span,
+.bonnet__right span {
+   display: inline-block;
+   border-bottom: 50px solid #ffa500;
+}
+
+.bonnet__left span {
+   width: 269px;
+   height: 0;
+   border-left: 50px solid transparent;
+}
+
+.bonnet__right span {
+   width: 100px;
+   height: 0;
+   border-right: 50px solid transparent;
+}
+
+/* *************************** */
+.body-car__bumper {
+   max-width: 450px;
+   width: 100%;
+   min-height: 100px;
+   margin: 0 auto;
+   background-color: #ffa500;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%);
+   border-bottom-left-radius: 93px;
+   border-bottom-right-radius: 93px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   z-index: 5;
+}
+
+.bumper__logo {
+   display: inline-block;
+   width: 40px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: #fbf6f6;
+   border: 5px solid #383737;
+   position: relative;
+   overflow: hidden;
+   top: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+   box-shadow: 0 3px 5px 0 #fff;
+}
+
+.bumper__logo::before,
+.bumper__logo::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-bottom: 30px solid #4804cf;
+}
+
+.bumper__logo::before {
+   bottom: -13px;
+   left: 8px;
+   transform: rotate(305deg);
+}
+
+.bumper__logo::after {
+   top: -14px;
+   left: -14px;
+   transform: rotate(133deg);
+}
+
+.bumper__border {
+   position: absolute;
+   top: -22px;
+   left: 0;
+   max-width: 450px;
+   width: 100%;
+   height: 50px;
+   background-color: #ffa500;
+   border-top: 1px solid #000;
+   border-top-right-radius: 50px;
+   border-top-left-radius: 50px;
+
+}
+
+.bumper__box {}
+
+.box__left,
+.box__right {
+   position: absolute;
+   display: inline-block;
+   max-width: 90px;
+   width: 100%;
+   min-height: 50px;
+   background-color: #ad9e9e;
+   border-radius: 0% 100% 21% 79% / 75% 75% 25% 25%;
+}
+
+.box__left {
+   top: 0;
+   left: 15px;
+   box-shadow: 0 2px 5px 0 #fff, inset 0 2px 2px 0 #000, inset 0 -2px 2px 0 #000;
+}
+
+.box__right {
+   top: 5px;
+   right: 15px;
+   transform: rotate(156deg);
+   box-shadow: 0 -2px 5px 0 #fff, inset 0 2px 2px 0 #000, inset 0 -2px 2px 0 #000;
+}
+
+.lights-left {}
+
+.lights-left__circul-big,
+.lights-left__circul-small {
+   position: absolute;
+   border-radius: 50%;
+   background-color: #ad9e9e;
+   border: 2px solid #fff;
+   box-shadow: 0 -1px 15px 0 #90e302;
+}
+
+.lights-left__circul-big {
+   top: 8px;
+   left: 7px;
+   width: 30px;
+   height: 30px;
+}
+
+.lights-left__circul-small {
+   top: 21px;
+   left: 46px;
+   width: 20px;
+   height: 20px;
+}
+
+.box__net {
+   position: absolute;
+   top: 30px;
+   left: 50%;
+}
+
+.net {}
+
+.net__row {}
+
+.net__col-left,
+.net__col-right {
+   position: absolute;
+   top: 0;
+   width: 90px;
+   height: 30px;
+   background-color: #fff;
+   border-radius: 100% 0% 0% 100% / 50% 100% 0% 50%;
+   box-shadow: 0 -1px 3px 0 #000, 0 1px 3px #000;
+   overflow: hidden;
+}
+
+.net__col-left {
+   left: 3px;
+   transform: rotate(180deg);
+}
+
+.net__box {}
+
+.net__box span {
+   display: inline-block;
+   width: 1.2px;
+   height: 32px;
+   background-color: #000;
+   margin: 0 5px;
+}
+
+.net__col-right {
+   right: 3px;
+}
+
+.net__item {}
+
+.lights-right {}
+
+.lights-right__circul-big,
+.lights-right__circul-small {
+   position: absolute;
+   border-radius: 50%;
+   background-color: #ad9e9e;
+   border: 2px solid #fff;
+   box-shadow: 0 -1px 15px 0 #90e302;
+}
+
+.lights-right__circul-big {
+   top: 8px;
+   left: 7px;
+   width: 30px;
+   height: 30px;
+}
+
+.lights-right__circul-small {
+   top: 21px;
+   left: 46px;
+   width: 20px;
+   height: 20px;
+}
+
+.car__body {}
+
+
+/* *************** */
+.body-car__bottom-bump {
+   position: absolute;
+   z-index: 4;
+   overflow: hidden;
+   bottom: 76px;
+   left: 50%;
+   transform: translateX(-50%);
+   max-width: 450px;
+   width: 100%;
+   height: 154px;
+   background-color: #ffa500;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+.bump-bottom__row {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.bump-bottom__net {
+   position: absolute;
+   z-index: 8;
+   top: 5px;
+   right: 50%;
+   transform: translateX(50%);
+   max-width: 190px;
+   width: 100%;
+   height: 60px;
+   background-color: #fff;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   overflow: hidden;
+   box-shadow: 0 3px 8px 0 #000, inset 0 1px 5px 0 #000;
+}
+
+.bottom-net {}
+
+.bottom-netl__box {
+   position: relative;
+   left: 4px;
+}
+
+.bottom-netl__box span {
+   display: inline-block;
+   width: 1px;
+   height: 60px;
+   background-color: #000;
+   margin: 0 3px;
+   box-shadow: 0 0 5px 0 #000;
+}
+
+.bottom-netl__item {}
+
+.bump-bottom__col-left,
+.bump-bottom__col-right {
+   position: absolute;
+   top: 5px;
+   max-width: 70px;
+   width: 100%;
+   height: 40px;
+   background-color: #fff;
+   /* border-top-left-radius: 20px;
+   border-bottom-right-radius: 10px; */
+   box-shadow: 0 1px 3px 0 #000, inset -2px 1px 8px 0 #000;
+   overflow: hidden;
+}
+
+.bump-bottom__col-left {
+   border-top-left-radius: 20px;
+   border-bottom-right-radius: 10px;
+}
+
+.bump-bottom__col-right {
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 10px;
+}
+
+.bump-bottom__col-right {
+   right: 15px;
+
+}
+
+.bump-bottom__col-left {
+   left: 15px;
+}
+
+.left-col__box,
+.right-col__box {
+   position: relative;
+}
+
+.left-col__panel,
+.right-col__panel {
+   position: absolute;
+   z-index: 4;
+   top: 0;
+   width: 50px;
+   height: 13px;
+   background-color: #ffa500;
+   box-shadow: 0 1px 2px 0 #000, inset 0 0 1px 0 #000
+}
+
+.left-col__panel {
+   border-top-left-radius: 40px;
+   border-bottom-right-radius: 40px;
+}
+
+.right-col__panel {
+   border-top-right-radius: 40px;
+   border-bottom-left-radius: 40px;
+}
+
+.right-col__panel {
+   left: -1px;
+}
+
+.left-col__panel {
+   right: -1px;
+}
+
+.left-col__net,
+.right-col__net {
+   position: relative;
+   right: -4px;
+}
+
+.left-col__item,
+.right-col__item {
+   display: inline-block;
+   width: 1px;
+   height: 50px;
+   background-color: #000;
+   margin: 0 1px;
+   box-shadow: 0 0 1px 0 #000;
+}
+
+/* ********************* */
+.body-car__wheel {
+   position: absolute;
+   width: 100%;
+   height: 100px;
+   bottom: 38px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.wheel__left,
+.wheel__right {
+   position: absolute;
+   top: 0;
+   width: 70px;
+   border-radius: 20px;
+   height: 100%;
+   background-color: #090909;
+   overflow: hidden;
+   box-shadow: 0 1px 2px #fefcfc;
+}
+
+.wheel__left {
+   left: 72px;
+}
+
+.wheel__right {
+   right: 72px;
+}
+
+.right-wheel__box,
+.left-wheel__box {
+   height: 100%;
+}
+
+.left-wheel__circul,
+.right-wheel__circul {
+   display: inline-block;
+   width: 1px;
+   height: 100%;
+   background-color: #423d3d;
+   margin: 0 15px;
+   box-shadow: 0 0 5px 0 #fefefe;
+}
+
+/* **************** */
+.car__bottom {
+   position: relative;
+   background-color: #371f1f;
+   width: 100%;
+   height: 628px;
+}
+.car__bottom span {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   display: block;
+   border: 15px dashed #fff;
+   width: 20px;
+   height: 100%;
+}
